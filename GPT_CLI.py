@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 import openai
 
 def translate_to_command(user_input):
