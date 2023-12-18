@@ -36,7 +36,7 @@ fi
 
 # 실행 파일을 적절한 위치에 복사
 echo "Copying the script to the installation directory..."
-cp script.py $INSTALL_DIR/n2lcmd
+cp GPT_CLI.py $INSTALL_DIR/n2lcmd
 
 # 실행 권한 부여
 chmod +x $INSTALL_DIR/n2lcmd
