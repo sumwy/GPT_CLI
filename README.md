@@ -1,5 +1,5 @@
 # GPT_CLI
-This is a project to write GPT natural language into Linux CLI commands.
+
 
 
 # 자연어 리눅스 명령어 변환기
