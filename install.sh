@@ -6,7 +6,7 @@ export OPENAI_API_KEY
 
 # 저장소 URL 및 이름 설정
 REPO_URL="https://github.com/sumwy/GPT_CLI.git"
-REPO_NAME="GPT_CLI"
+REPO_NAME="GPT_CLI"
 INSTALL_DIR="/usr/local/bin"
 
 # 저장소가 이미 존재하는지 확인
