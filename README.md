@@ -52,5 +52,5 @@ This is a project to write GPT natural language into Linux CLI commands.
 
 질문이나 제안이 있으시면, 이슈를 생성하거나 아래 이메일로 연락주세요.
 
-- 이메일: thspade@gamil.com
+- 이메일: thspade@gmail.com
 
