@@ -1,13 +1,11 @@
+#!/usr/bin/env python3
 import openai
 
-# 사용자에게 OpenAI API 키 입력 요청
-read -p "Enter your OpenAI API key: " OPENAI_API_KEY
-export OPENAI_API_KEY
-
 def translate_to_command(user_input):
-    openai.api_key = 'YOUR_OPENAI_API_KEY'  # 여기에 OpenAI API 키를 입력하세요.
-
     try:
+        with open('openai_api_key.txt', 'r') as file:
+            openai.api_key = file.read().strip()
+            
         # OpenAI GPT 모델에 쿼리를 전송하고, 결과를 받습니다.
         response = openai.Completion.create(
             engine="davinci",  # 다른 엔진을 사용할 수도 있습니다.
@@ -35,7 +33,7 @@ def translate_to_command(user_input):
         print(f"오류: {e}")
         return None
 
-# 사용자 입력 예시
-user_input = "파일 목록을 보여줘"
+# 사용자로부터 자연어 명령 입력 받기
+user_input = input("Enter the natural language command: ")
 command = translate_to_command(user_input)
-print(f"변환된 명령어: {command}")
+print(f"Translated Command: {command}")
