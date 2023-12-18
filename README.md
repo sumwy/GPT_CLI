@@ -29,7 +29,7 @@ This is a project to write GPT natural language into Linux CLI commands.
 
 1. 스크립트 실행:
    ```bash
-   python script.py
+   python GPT_CLI.py
    ```
 2. 자연어 명령 입력:
    ```
