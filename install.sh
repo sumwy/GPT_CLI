@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# 사용자에게 OpenAI API 키 입력 요청
+read -p "Enter your OpenAI API key: " OPENAI_API_KEY
+export OPENAI_API_KEY
+
 # 저장소 주소 및 필요한 변수 설정
 REPO_URL="https://github.com/sumwy/GPT_CLI.git"
 REPO_NAME="GPT_CLI"
