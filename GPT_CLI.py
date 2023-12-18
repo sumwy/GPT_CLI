@@ -1,5 +1,9 @@
 import openai
 
+# 사용자에게 OpenAI API 키 입력 요청
+read -p "Enter your OpenAI API key: " OPENAI_API_KEY
+export OPENAI_API_KEY
+
 def translate_to_command(user_input):
     openai.api_key = 'YOUR_OPENAI_API_KEY'  # 여기에 OpenAI API 키를 입력하세요.
 
